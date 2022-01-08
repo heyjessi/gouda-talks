@@ -1,6 +1,7 @@
 backend:
-  name: github
-  repo: thomaswang/gatsby-personal-starter-blog
+  name: git-gateway
+  repo: heyjessi/gouda-talks
+  branch: main
 
 media_folder: content/assets
 public_folder: ../assets
