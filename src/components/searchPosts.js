@@ -27,7 +27,7 @@ const SearchBar = styled.div`
     display: flex;
     flex: 100%;
     height: 100%;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    font-family: "Josefin Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 16px;
     background-color: transparent;
@@ -57,7 +57,7 @@ const SearchedPosts = ({ results }) =>
               marginBottom: rhythm(1 / 4),
             }}
           >
-            <Link style={{ boxShadow: `none` }} to={`/blog${slug}`}>
+            <Link style={{ boxShadow: `none`}} to={`/blog${slug}`}>
               {title}
             </Link>
           </h3>
@@ -77,7 +77,7 @@ const SearchedPosts = ({ results }) =>
   )
 
 const AllPosts = ({ posts }) => (
-  <div style={{ margin: "20px 0 40px" }}>
+  <div style={{ margin: "20px 0 40px" }} style={{fontFamily: 'Cormorant'}}>
     {posts.map(({ node }) => {
       const title = node.frontmatter.title || node.fields.slug
       return (
@@ -87,7 +87,7 @@ const AllPosts = ({ posts }) => (
               marginBottom: rhythm(1 / 4),
             }}
           >
-            <Link style={{ boxShadow: `none` }} to={`/blog${node.fields.slug}`}>
+            <Link style={{ boxShadow: `none`, fontFamily: 'Cormorant' }} to={`/blog${node.fields.slug}`}>
               {title}
             </Link>
           </h3>

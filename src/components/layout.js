@@ -18,6 +18,10 @@ class Layout extends React.Component {
             ...scale(1.5),
             marginBottom: rhythm(1.5),
             marginTop: 0,
+            fontFamily: 'Josefin Sans, sans-serif', 
+            textAlign: "center",
+            textTransform: "capitalize",
+            letterSpacing: "4px"
           }}
         >
           <Link
@@ -36,7 +40,7 @@ class Layout extends React.Component {
       header = (
         <h3
           style={{
-            fontFamily: `Montserrat, sans-serif`,
+            fontFamily: `Josefin Sans, sans-serif`,
             marginTop: 0,
           }}
         >
@@ -67,9 +71,9 @@ class Layout extends React.Component {
           <main>{children}</main>
         </div>
         <Footer>
-          © {new Date().getFullYear()}, Built with
+          {/* © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a href="https://www.gatsbyjs.org">Gatsby</a> */}
         </Footer>
       </Wrapper>
     )

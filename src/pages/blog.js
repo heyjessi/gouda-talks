@@ -12,12 +12,13 @@ class Blog extends React.Component {
     const { data, navigate, location } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMdx.edges
+    console.log(posts)
     const localSearchBlog = data.localSearchBlog
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
-        <Bio />
+        {/* <Bio /> */}
         <SearchPosts
           posts={posts}
           localSearchBlog={localSearchBlog}
